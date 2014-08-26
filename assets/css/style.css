@@ -240,10 +240,12 @@ a:focus {
 
 #downloads {
   padding-top: 60px;
+  padding-bottom: 60px;
   background: lightgoldenrodyellow;
 }
 
 #repos {
+  padding-top: 60px;
   padding-bottom: 90px;
 }
 
