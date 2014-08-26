@@ -1,0 +1,7 @@
+Origin: EMP Local Client
+Label: EMP Local Client
+Codename: unstable
+Architectures: amd64 i386
+Components: main
+Description: Apt repository for EMP
+SignWith: DB9CAE3B
