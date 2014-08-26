@@ -47,8 +47,9 @@
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="docs.html">Documentation</a></li>
             <li><a target="_blank" href="https://github.com/encryptedmessaging">Github</a></li>
-            <li class="active"><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -57,20 +58,16 @@
 	<!-- *****************************************************************************************************************
 	 BLUE WRAP
 	 ***************************************************************************************************************** -->
-	<div id="contact">
+	<div id="license">
 	    <div class="container">
 			<div class="row">
-				<h3>Contact.</h3>
-        <h4>Alex Smith</h4>
-        <ul>
-          <li>EMP: 1VYJ99L1+g8cW0R5/lGj3ZWril/hGSPbe</li>
-          <li><a target="_blank" style="text-decoration: underline;" href="alexsmith.txt">GPG Key</a></li>
-        </ul>
-        <h4>Ethan Gordon</h4>
-        <ul>
-          <li>EMP: 1mn3SFbkRy2I6c/jttwmqMV8F3mv94YlH</li>
-          <li><a target="_blank" style="text-decoration: underline;" href="ethangordon.pub">GPG Key</a></li>
-        </ul>
+        <h1>JSON RPC Documentation</h1>
+        <h3>Functions</h3>
+        <h4>AddUpdateAddress</h4>
+        <p>
+        <br />Arugments: address, address_bytes, address_label, registered, subscribed, pubkey, privkey, encryptedprivkey
+        <br />Description: Adds an address to the database.  address_bytes and encrypted_privkey should both be null (NOP).
+        </p>
 			</div><!-- /row -->
 	    </div> <!-- /container -->
 	</div><!-- /blue -->
@@ -87,16 +84,7 @@
 	<script src="assets/js/jquery.prettyPhoto.js"></script>
   	<script src="assets/js/jquery.isotope.min.js"></script>
   	<script src="assets/js/custom.js"></script>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-45941462-2', 'auto');
-    ga('send', 'pageview');
-
-    </script>
 
   </body>
 </html>
