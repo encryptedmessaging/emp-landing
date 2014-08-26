@@ -115,29 +115,30 @@
           <i class="fa fa-windows"></i>
           <h4>Windows</h4>
           <ul>
-            <li><a href="#">32-bit binary</a></li>
-            <li><a href="#">64-bit binary</a></li>
+            <li><a href="/assets/dl/Setup_v0.1.4_x86.exe">32-bit binary</a></li>
+            <li><a href="/assets/dl/Setup_v0.1.4_amd64.exe">64-bit binary</a></li>
           </ul>
         </div>
         <div class="col-md-2">
           <i class="fa fa-apple"></i>
           <h4>Mac</h4>
           <ul>
-            <li><a href="#">Universal Binary</a></li>
+            <li><a href="/assets/dl/EMP_v0.1.4.dmg">Universal Binary</a></li>
           </ul>
         </div>
         <div class="col-md-2">
           <i class="fa fa-linux"></i>
           <h4>Linux</h4>
           <ul>
-            <li><a href="#">.deb (Debian/Ubuntu)</a></li>
-            <li><a href="#">.rpm (RedHat/Fedora)</a></li>
+            <li><a href="/repos/apt/debian/pool/main/e/emp/emp_0.1.4_i386.deb">32-bit .deb (Debian/Ubuntu)</a></li>
+            <li><a href="/repos/apt/debian/pool/main/e/emp/emp_0.1.4_amd64.deb">64-bit .deb (Debian/Ubuntu)</a></li>
+            <li><a href="#">.rpm (Fedora/RHEL)</a></li>
         </div>
         <div class="col-md-2">
           <i class="fa fa-android"></i>
           <h4>Android</h4>
           <ul>
-            <li><a href="#">KitKat</a></li>
+            <li><a href="/assets/dl/EMP_v0.1.4.apk">KitKat</a></li>
           </ul>
         </div>
         <div class="col-md-2">
@@ -145,6 +146,7 @@
           <h4>Source</h4>
           <ul>
             <li><a href="https://github.com/encryptedmessaging/emp">GitHub</a></li>
+            <li><a href="https://github.com/encryptedmessaging/emp/archive/v0.1.4.tar.gz">Tarball</a></li>
           </ul>
         </div>
       </div>
@@ -161,12 +163,13 @@
         <div class="col-lg-8 col-lg-offset-1">
           <h3>Debian/Ubuntu:</h3>
 <pre>sudo apt-add-repository deb http://emp.jar.st/repos/apt/debian unstable main
+wget -O key http://emp.jar.st/repos/apt/debian/conf/jarst.gpg.key && sudo apt-key add key; rm -f key
 sudo apt-get install emp</pre>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-6 col-lg-offset-1">
-          <h3>RedHat/Fedora:</h3>
+          <h3>RedHat/Fedora Repository:</h3>
           <p>coming soon...</p>
         </div>
       </div>
