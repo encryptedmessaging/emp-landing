@@ -1,0 +1,1470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://emp.jar.st/</loc>
+  <lastmod>2014-08-27T19:47:06+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/index.html</loc>
+  <lastmod>2014-08-27T19:47:06+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/godoc/pkg/</loc>
+  <lastmod>2014-08-27T18:32:17+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/contact.html</loc>
+  <lastmod>2014-08-27T19:48:10+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/LICENSE</loc>
+  <lastmod>2014-08-27T19:48:10+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/godoc/pkg/emp/</loc>
+  <lastmod>2014-08-27T18:30:51+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/godoc/pkg/emp/api/</loc>
+  <lastmod>2014-08-27T18:25:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/godoc/pkg/emp/db/</loc>
+  <lastmod>2014-08-27T18:25:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/godoc/pkg/emp/encryption/</loc>
+  <lastmod>2014-08-27T18:25:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/godoc/pkg/emp/local/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/godoc/pkg/emp/local/localapi/</loc>
+  <lastmod>2014-08-27T18:25:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/godoc/pkg/emp/local/localdb/</loc>
+  <lastmod>2014-08-27T18:25:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/godoc/pkg/emp/objects/</loc>
+  <lastmod>2014-08-27T18:25:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/godoc/pkg/quibit/</loc>
+  <lastmod>2014-08-27T18:25:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/alexsmith.txt</loc>
+  <lastmod>2014-08-26T20:47:40+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/ethangordon.txt</loc>
+  <lastmod>2014-08-26T20:47:40+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/doc/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/api/api.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/api/aux.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/api/config.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/api/config.go?s=2023:2055</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/api/config.go?s=6371:6404</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/api/config.go?s=3134:3158</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/api/config.go?s=5652:5685</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/api/config.go?s=3026:3054</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/api/api.go?s=663:692</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/api/config.go?s=474:1960</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/api/config.go?s=3393:3435</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/db.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/error.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/hashlist.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/objects.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/hashlist.go?s=684:728</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/objects.go?s=3733:3793</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/objects.go?s=3173:3229</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/objects.go?s=727:796</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/objects.go?s=2015:2068</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/db.go?s=3763:3777</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/hashlist.go?s=1050:1089</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/hashlist.go?s=863:896</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/objects.go?s=4286:4358</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/objects.go?s=1311:1390</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/objects.go?s=2599:2667</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/db.go?s=654:707</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/hashlist.go?s=1309:1336</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/objects.go?s=5122:5182</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/objects.go?s=464:512</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/error.go?s=351:367</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/error.go?s=369:400</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/address.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/encrypted_data.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/guid.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/message.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/symmetric.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/address.go?s=2303:2343</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/address.go?s=526:586</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/message.go?s=2707:2788</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/message.go?s=3553:3636</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/guid.go?s=404:424</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/address.go?s=1252:1306</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/address.go?s=1128:1158</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/address.go?s=846:886</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/address.go?s=2529:2569</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/symmetric.go?s=1519:1595</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/symmetric.go?s=599:687</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/address.go?s=1023:1072</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/address.go?s=1997:2035</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/encrypted_data.go?s=349:656</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/message.go?s=632:717</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/message.go?s=1583:1671</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/encrypted_data.go?s=758:812</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/encrypted_data.go?s=1193:1237</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/godoc/pkg/emp/local/?C=N;O=D</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/godoc/pkg/emp/local/?C=M;O=A</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/godoc/pkg/emp/local/?C=S;O=A</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/godoc/pkg/emp/local/?C=D;O=A</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/localapi.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcfunc.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcmsg.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/localapi.go?s=2052:2066</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/localapi.go?s=1289:1333</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/localapi.go?s=643:692</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcfunc.go?s=3971:4083</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcfunc.go?s=944:1038</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcfunc.go?s=1877:1986</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcmsg.go?s=4566:4660</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcfunc.go?s=460:554</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcfunc.go?s=3250:3354</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcmsg.go?s=11240:11352</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcfunc.go?s=1246:1333</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcmsg.go?s=10268:10369</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcfunc.go?s=4399:4496</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcmsg.go?s=9931:10047</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcmsg.go?s=9599:9713</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcmsg.go?s=11725:11828</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcmsg.go?s=10590:10692</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcmsg.go?s=1013:1113</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcmsg.go?s=3850:3943</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcmsg.go?s=5922:6019</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcmsg.go?s=4765:4856</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcmsg.go?s=10914:11017</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/localapi.go?s=718:809</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/localapi.go?s=694:716</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcmsg.go?s=739:865</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcmsg.go?s=867:1011</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcmsg.go?s=476:640</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcmsg.go?s=642:737</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localdb/dbAdmin.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localdb/localdb.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localdb/localdb.go?s=2988:3032</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localdb/dbAdmin.go?s=392:451</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localdb/dbAdmin.go?s=4728:4790</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localdb/localdb.go?s=2627:2641</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localdb/localdb.go?s=3314:3353</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localdb/localdb.go?s=3157:3187</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localdb/dbAdmin.go?s=4446:4494</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localdb/dbAdmin.go?s=4167:4215</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localdb/dbAdmin.go?s=9005:9046</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localdb/dbAdmin.go?s=1963:2039</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localdb/dbAdmin.go?s=6714:6756</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localdb/dbAdmin.go?s=8245:8304</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localdb/dbAdmin.go?s=7497:7550</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localdb/dbAdmin.go?s=2964:3038</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localdb/localdb.go?s=608:661</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localdb/dbAdmin.go?s=2597:2644</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/address.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/interface.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/localmsg.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/message.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/node.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/obj.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/pubkey.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/purge.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/version.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/interface.go?s=732:798</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/address.go?s=329:1112</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/localmsg.go?s=1059:1491</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/localmsg.go?s=1915:1970</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/localmsg.go?s=1493:1537</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/pubkey.go?s=388:626</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/pubkey.go?s=864:918</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/pubkey.go?s=628:671</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/localmsg.go?s=852:1057</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/obj.go?s=393:416</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/obj.go?s=452:483</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/obj.go?s=661:704</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/obj.go?s=543:575</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/message.go?s=405:711</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/message.go?s=1115:1161</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/message.go?s=1572:1607</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/localmsg.go?s=405:850</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/interface.go?s=511:531</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/interface.go?s=589:635</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/interface.go?s=533:571</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/node.go?s=430:725</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/node.go?s=776:824</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/node.go?s=1158:1188</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/node.go?s=727:774</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/node.go?s=1732:1779</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/node.go?s=1291:1327</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/obj.go?s=921:957</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/obj.go?s=1207:1249</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/obj.go?s=959:990</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/purge.go?s=372:438</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/purge.go?s=592:636</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/purge.go?s=440:473</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/interface.go?s=436:509</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/version.go?s=472:919</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/version.go?s=921:967</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/version.go?s=1405:1440</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/error.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/frame.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/header.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/peer.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/quibit.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/recvUtil.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/server.go</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/quibit.go?s=1629:1643</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/quibit.go?s=1162:1264</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/quibit.go?s=1782:1805</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/quibit.go?s=2326:2343</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/frame.go?s=320:492</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/frame.go?s=583:639</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/header.go?s=426:673</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/header.go?s=725:764</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/header.go?s=1079:1121</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/header.go?s=897:939</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/peer.go?s=365:501</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/quibit.go?s=2000:2028</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/peer.go?s=1792:1819</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/peer.go?s=1145:1178</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/peer.go?s=971:1001</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/error.go?s=361:381</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/error.go?s=426:461</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/doc/?C=N;O=D</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/doc/?C=M;O=A</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/doc/?C=S;O=A</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/doc/?C=D;O=A</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/doc/gopher/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/api/api.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/api/aux.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/api/config.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/db.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/error.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/hashlist.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/db/objects.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/address.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/encrypted_data.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/guid.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/message.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/encryption/symmetric.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/godoc/pkg/emp/local/?C=N;O=A</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/godoc/pkg/emp/local/?C=M;O=D</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/godoc/pkg/emp/local/?C=S;O=D</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/godoc/pkg/emp/local/?C=D;O=D</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/localapi.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcfunc.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localapi/rpcmsg.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localdb/dbAdmin.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/local/localdb/localdb.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/address.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/interface.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/localmsg.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/message.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/node.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/obj.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/pubkey.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/purge.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/emp/objects/version.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/error.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/frame.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/header.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/peer.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/quibit.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/recvUtil.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/src/pkg/quibit/server.go?m=text</loc>
+  <lastmod>2014-08-27T18:35:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/doc/?C=N;O=A</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/doc/?C=M;O=D</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/doc/?C=S;O=D</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/doc/?C=D;O=D</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/doc/gopher/?C=N;O=D</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/doc/gopher/?C=M;O=A</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/doc/gopher/?C=S;O=A</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/doc/gopher/?C=D;O=A</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/doc/gopher/?C=N;O=A</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/doc/gopher/?C=M;O=D</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/doc/gopher/?C=S;O=D</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://emp.jar.st/doc/gopher/?C=D;O=D</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.26</priority>
+</url>
+</urlset>
