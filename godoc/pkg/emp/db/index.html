@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <title>db - The Go Programming Language</title>
+
+<link type="text/css" rel="stylesheet" href="/lib/godoc/style.css">
+
+<script type="text/javascript">window.initFuncs = [];</script>
+</head>
+<body>
+
+<div id="topbar" class="wide"><div class="container">
+
+<form method="GET" action="/search">
+<div id="menu">
+<a href="/doc/">Documents</a>
+<a href="/pkg/">Packages</a>
+<a href="/project/">The Project</a>
+<a href="/help/">Help</a>
+<a href="/blog/">Blog</a>
+
+<input type="text" id="search" name="q" class="inactive" value="Search" placeholder="Search">
+</div>
+<div id="heading"><a href="/">The Go Programming Language</a></div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <div id="plusone"><g:plusone size="small" annotation="none"></g:plusone></div>
+  <h1>Package db</h1>
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "emp/db"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package db provides a connection to a local SQLite database to store the EMP inventory.
+</p>
+
+			</div>
+		</div>
+		
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="#pkg-constants">Constants</a></dd>
+			
+			
+			
+				
+				<dd><a href="#Add">func Add(hashObj objects.Hash, hashType int)</a></dd>
+			
+				
+				<dd><a href="#AddMessage">func AddMessage(log chan string, msg *objects.Message) error</a></dd>
+			
+				
+				<dd><a href="#AddPub">func AddPub(log chan string, msg *objects.Message) error</a></dd>
+			
+				
+				<dd><a href="#AddPubkey">func AddPubkey(log chan string, pubkey objects.EncryptedPubkey) error</a></dd>
+			
+				
+				<dd><a href="#AddPurge">func AddPurge(log chan string, p objects.Purge) error</a></dd>
+			
+				
+				<dd><a href="#Cleanup">func Cleanup()</a></dd>
+			
+				
+				<dd><a href="#Contains">func Contains(hashObj objects.Hash) int</a></dd>
+			
+				
+				<dd><a href="#Delete">func Delete(hashObj objects.Hash)</a></dd>
+			
+				
+				<dd><a href="#GetMessage">func GetMessage(log chan string, txidHash objects.Hash) *objects.Message</a></dd>
+			
+				
+				<dd><a href="#GetPubkey">func GetPubkey(log chan string, addrHash objects.Hash) *objects.EncryptedPubkey</a></dd>
+			
+				
+				<dd><a href="#GetPurge">func GetPurge(log chan string, txidHash objects.Hash) *objects.Purge</a></dd>
+			
+				
+				<dd><a href="#Initialize">func Initialize(log chan string, dbFile string) error</a></dd>
+			
+				
+				<dd><a href="#ObjList">func ObjList() *objects.Obj</a></dd>
+			
+				
+				<dd><a href="#RemoveHash">func RemoveHash(log chan string, hashObj objects.Hash) error</a></dd>
+			
+				
+				<dd><a href="#SweepMessages">func SweepMessages(duration time.Duration) error</a></dd>
+			
+			
+				
+				<dd><a href="#DBError">type DBError</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DBError.Error">func (e DBError) Error() string</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h4>Package files</h4>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="/src/pkg/emp/db/db.go">db.go</a>
+			
+				<a href="/src/pkg/emp/db/error.go">error.go</a>
+			
+				<a href="/src/pkg/emp/db/hashlist.go">hashlist.go</a>
+			
+				<a href="/src/pkg/emp/db/objects.go">objects.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				<pre>const (
+    <span id="PUBKEY">PUBKEY</span>   = <a href="/pkg/builtin/#iota">iota</a> <span class="comment">// Encrypted Public Key</span>
+    <span id="PURGE">PURGE</span>    = <a href="/pkg/builtin/#iota">iota</a> <span class="comment">// Purged Message</span>
+    <span id="MSG">MSG</span>      = <a href="/pkg/builtin/#iota">iota</a> <span class="comment">// Basic Message</span>
+    <span id="PUBKEYRQ">PUBKEYRQ</span> = <a href="/pkg/builtin/#iota">iota</a> <span class="comment">// Public Key Request</span>
+    <span id="PUB">PUB</span>      = <a href="/pkg/builtin/#iota">iota</a> <span class="comment">// Published Message</span>
+    <span id="NOTFOUND">NOTFOUND</span> = <a href="/pkg/builtin/#iota">iota</a> <span class="comment">// Object not in hash list.</span>
+)</pre>
+				
+			
+				<pre>const (
+    <span id="EUNINIT">EUNINIT</span> = <a href="/pkg/builtin/#iota">iota</a>
+)</pre>
+				
+			
+		
+		
+		
+			
+			
+			<h2 id="Add">func <a href="/src/pkg/emp/db/hashlist.go?s=684:728#L19">Add</a></h2>
+			<pre>func Add(hashObj <a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#Hash">Hash</a>, hashType <a href="/pkg/builtin/#int">int</a>)</pre>
+			<p>
+Add an object to the hash list with a given type.
+</p>
+
+			
+		
+			
+			
+			<h2 id="AddMessage">func <a href="/src/pkg/emp/db/objects.go?s=3733:3793#L150">AddMessage</a></h2>
+			<pre>func AddMessage(log chan <a href="/pkg/builtin/#string">string</a>, msg *<a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#Message">Message</a>) <a href="/pkg/builtin/#error">error</a></pre>
+			<p>
+Add basic message to database and hash list.
+</p>
+
+			
+		
+			
+			
+			<h2 id="AddPub">func <a href="/src/pkg/emp/db/objects.go?s=3173:3229#L128">AddPub</a></h2>
+			<pre>func AddPub(log chan <a href="/pkg/builtin/#string">string</a>, msg *<a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#Message">Message</a>) <a href="/pkg/builtin/#error">error</a></pre>
+			<p>
+Add Published Message to database and hash list.
+</p>
+
+			
+		
+			
+			
+			<h2 id="AddPubkey">func <a href="/src/pkg/emp/db/objects.go?s=727:796#L22">AddPubkey</a></h2>
+			<pre>func AddPubkey(log chan <a href="/pkg/builtin/#string">string</a>, pubkey <a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#EncryptedPubkey">EncryptedPubkey</a>) <a href="/pkg/builtin/#error">error</a></pre>
+			<p>
+Add Encrypted public key to database and hash list.
+</p>
+
+			
+		
+			
+			
+			<h2 id="AddPurge">func <a href="/src/pkg/emp/db/objects.go?s=2015:2068#L74">AddPurge</a></h2>
+			<pre>func AddPurge(log chan <a href="/pkg/builtin/#string">string</a>, p <a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#Purge">Purge</a>) <a href="/pkg/builtin/#error">error</a></pre>
+			<p>
+Add Purge Token to database, and remove corresponding message if necessary.
+</p>
+
+			
+		
+			
+			
+			<h2 id="Cleanup">func <a href="/src/pkg/emp/db/db.go?s=3763:3777#L119">Cleanup</a></h2>
+			<pre>func Cleanup()</pre>
+			<p>
+Closes the database connection and de-initializes the global hash list.
+</p>
+
+			
+		
+			
+			
+			<h2 id="Contains">func <a href="/src/pkg/emp/db/hashlist.go?s=1050:1089#L35">Contains</a></h2>
+			<pre>func Contains(hashObj <a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#Hash">Hash</a>) <a href="/pkg/builtin/#int">int</a></pre>
+			<p>
+Return the type the item in the hash list (see constants).
+</p>
+
+			
+		
+			
+			
+			<h2 id="Delete">func <a href="/src/pkg/emp/db/hashlist.go?s=863:896#L27">Delete</a></h2>
+			<pre>func Delete(hashObj <a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#Hash">Hash</a>)</pre>
+			<p>
+Remove an object from the hash list.
+</p>
+
+			
+		
+			
+			
+			<h2 id="GetMessage">func <a href="/src/pkg/emp/db/objects.go?s=4286:4358#L173">GetMessage</a></h2>
+			<pre>func GetMessage(log chan <a href="/pkg/builtin/#string">string</a>, txidHash <a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#Hash">Hash</a>) *<a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#Message">Message</a></pre>
+			<p>
+Get basic message from database.
+</p>
+
+			
+		
+			
+			
+			<h2 id="GetPubkey">func <a href="/src/pkg/emp/db/objects.go?s=1311:1390#L47">GetPubkey</a></h2>
+			<pre>func GetPubkey(log chan <a href="/pkg/builtin/#string">string</a>, addrHash <a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#Hash">Hash</a>) *<a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#EncryptedPubkey">EncryptedPubkey</a></pre>
+			<p>
+Get Encrypted Public Key from database.
+</p>
+
+			
+		
+			
+			
+			<h2 id="GetPurge">func <a href="/src/pkg/emp/db/objects.go?s=2599:2667#L103">GetPurge</a></h2>
+			<pre>func GetPurge(log chan <a href="/pkg/builtin/#string">string</a>, txidHash <a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#Hash">Hash</a>) *<a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#Purge">Purge</a></pre>
+			<p>
+Get purge token from the database.
+</p>
+
+			
+		
+			
+			
+			<h2 id="Initialize">func <a href="/src/pkg/emp/db/db.go?s=654:707#L16">Initialize</a></h2>
+			<pre>func Initialize(log chan <a href="/pkg/builtin/#string">string</a>, dbFile <a href="/pkg/builtin/#string">string</a>) <a href="/pkg/builtin/#error">error</a></pre>
+			<p>
+Initialize Database connection from Database File (Absolute Path), mutexes, and the global hash list.
+</p>
+
+			
+		
+			
+			
+			<h2 id="ObjList">func <a href="/src/pkg/emp/db/hashlist.go?s=1309:1336#L49">ObjList</a></h2>
+			<pre>func ObjList() *<a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#Obj">Obj</a></pre>
+			<p>
+List of all hashes in the hash list.
+</p>
+
+			
+		
+			
+			
+			<h2 id="RemoveHash">func <a href="/src/pkg/emp/db/objects.go?s=5122:5182#L207">RemoveHash</a></h2>
+			<pre>func RemoveHash(log chan <a href="/pkg/builtin/#string">string</a>, hashObj <a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#Hash">Hash</a>) <a href="/pkg/builtin/#error">error</a></pre>
+			<p>
+Remove any object from the database and hash list.
+</p>
+
+			
+		
+			
+			
+			<h2 id="SweepMessages">func <a href="/src/pkg/emp/db/objects.go?s=464:512#L12">SweepMessages</a></h2>
+			<pre>func SweepMessages(duration <a href="/pkg/time/">time</a>.<a href="/pkg/time/#Duration">Duration</a>) <a href="/pkg/builtin/#error">error</a></pre>
+			<p>
+Remove all basic and published messages older than (Current Time - duration).
+</p>
+
+			
+		
+		
+			
+			
+			<h2 id="DBError">type <a href="/src/pkg/emp/db/error.go?s=351:367#L8">DBError</a></h2>
+			<pre>type DBError <a href="/pkg/builtin/#int">int</a></pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="DBError.Error">func (DBError) <a href="/src/pkg/emp/db/error.go?s=369:400#L10">Error</a></h3>
+				<pre>func (e <a href="#DBError">DBError</a>) Error() <a href="/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.2.<br>
+Except as <a href="http://code.google.com/policies.html#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="/LICENSE">BSD license</a>.<br>
+<a href="/doc/tos.html">Terms of Service</a> | 
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+
+<script type="text/javascript" src="/lib/godoc/jquery.js"></script>
+
+<script type="text/javascript" src="/lib/godoc/godocs.js"></script>
+
+</body>
+</html>
+

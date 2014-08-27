@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <title>localapi - The Go Programming Language</title>
+
+<link type="text/css" rel="stylesheet" href="/lib/godoc/style.css">
+
+<script type="text/javascript">window.initFuncs = [];</script>
+</head>
+<body>
+
+<div id="topbar" class="wide"><div class="container">
+
+<form method="GET" action="/search">
+<div id="menu">
+<a href="/doc/">Documents</a>
+<a href="/pkg/">Packages</a>
+<a href="/project/">The Project</a>
+<a href="/help/">Help</a>
+<a href="/blog/">Blog</a>
+
+<input type="text" id="search" name="q" class="inactive" value="Search" placeholder="Search">
+</div>
+<div id="heading"><a href="/">The Go Programming Language</a></div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <div id="plusone"><g:plusone size="small" annotation="none"></g:plusone></div>
+  <h1>Package localapi</h1>
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "emp/local/localapi"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package LocalAPI provides the RPC-API that allows management of Addresses and Messages
+in EMPLocal.
+</p>
+
+			</div>
+		</div>
+		
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+				
+				<dd><a href="#Cleanup">func Cleanup()</a></dd>
+			
+				
+				<dd><a href="#Initialize">func Initialize(config *api.ApiConfig) error</a></dd>
+			
+			
+				
+				<dd><a href="#EMPService">type EMPService</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EMPService.AddUpdateAddress">func (service *EMPService) AddUpdateAddress(r *http.Request, args *objects.AddressDetail, reply *NilParam) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EMPService.ConnectionStatus">func (service *EMPService) ConnectionStatus(r *http.Request, args *NilParam, reply *int) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EMPService.CreateAddress">func (service *EMPService) CreateAddress(r *http.Request, args *NilParam, reply *objects.AddressDetail) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EMPService.DeleteMessage">func (service *EMPService) DeleteMessage(r *http.Request, args *[]byte, reply *NilParam) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EMPService.ForgetAddress">func (service *EMPService) ForgetAddress(r *http.Request, args *string, reply *NilParam) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EMPService.GetAddress">func (service *EMPService) GetAddress(r *http.Request, args *string, reply *objects.AddressDetail) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EMPService.GetEncrypted">func (service *EMPService) GetEncrypted(r *http.Request, args *[]byte, reply *encryption.EncryptedMessage) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EMPService.GetLabel">func (service *EMPService) GetLabel(r *http.Request, args *string, reply *string) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EMPService.Inbox">func (service *EMPService) Inbox(r *http.Request, args *NilParam, reply *[]objects.MetaMessage) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EMPService.ListAddresses">func (service *EMPService) ListAddresses(r *http.Request, args *bool, reply *([][2]string)) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EMPService.ListMessagesByRecpient">func (service *EMPService) ListMessagesByRecpient(r *http.Request, args *string, reply *[]objects.MetaMessage) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EMPService.ListMessagesBySender">func (service *EMPService) ListMessagesBySender(r *http.Request, args *string, reply *[]objects.MetaMessage) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EMPService.OpenMessage">func (service *EMPService) OpenMessage(r *http.Request, args *[]byte, reply *objects.FullMessage) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EMPService.Outbox">func (service *EMPService) Outbox(r *http.Request, args *NilParam, reply *[]objects.MetaMessage) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EMPService.PublishMessage">func (service *EMPService) PublishMessage(r *http.Request, args *SendMsg, reply *SendResponse) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EMPService.PurgeMessage">func (service *EMPService) PurgeMessage(r *http.Request, args *[]byte, reply *NilParam) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EMPService.SendMessage">func (service *EMPService) SendMessage(r *http.Request, args *SendMsg, reply *SendResponse) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EMPService.SendRawMsg">func (service *EMPService) SendRawMsg(r *http.Request, args *RawMsg, reply *NilParam) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EMPService.Sendbox">func (service *EMPService) Sendbox(r *http.Request, args *NilParam, reply *[]objects.MetaMessage) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EMPService.Version">func (s *EMPService) Version(r *http.Request, args *NilParam, reply *objects.Version) error</a></dd>
+				
+			
+				
+				<dd><a href="#NilParam">type NilParam</a></dd>
+				
+				
+			
+				
+				<dd><a href="#PubMsg">type PubMsg</a></dd>
+				
+				
+			
+				
+				<dd><a href="#RawMsg">type RawMsg</a></dd>
+				
+				
+			
+				
+				<dd><a href="#SendMsg">type SendMsg</a></dd>
+				
+				
+			
+				
+				<dd><a href="#SendResponse">type SendResponse</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h4>Package files</h4>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="/src/pkg/emp/local/localapi/localapi.go">localapi.go</a>
+			
+				<a href="/src/pkg/emp/local/localapi/rpcfunc.go">rpcfunc.go</a>
+			
+				<a href="/src/pkg/emp/local/localapi/rpcmsg.go">rpcmsg.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+		
+		
+			
+			
+			<h2 id="Cleanup">func <a href="/src/pkg/emp/local/localapi/localapi.go?s=2052:2066#L86">Cleanup</a></h2>
+			<pre>func Cleanup()</pre>
+			
+			
+		
+			
+			
+			<h2 id="Initialize">func <a href="/src/pkg/emp/local/localapi/localapi.go?s=1289:1333#L50">Initialize</a></h2>
+			<pre>func Initialize(config *<a href="/pkg/emp/api/">api</a>.<a href="/pkg/emp/api/#ApiConfig">ApiConfig</a>) <a href="/pkg/builtin/#error">error</a></pre>
+			
+			
+		
+		
+			
+			
+			<h2 id="EMPService">type <a href="/src/pkg/emp/local/localapi/localapi.go?s=643:692#L22">EMPService</a></h2>
+			<pre>type EMPService struct {
+    Config *<a href="/pkg/emp/api/">api</a>.<a href="/pkg/emp/api/#ApiConfig">ApiConfig</a>
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="EMPService.AddUpdateAddress">func (*EMPService) <a href="/src/pkg/emp/local/localapi/rpcfunc.go?s=3971:4083#L150">AddUpdateAddress</a></h3>
+				<pre>func (service *<a href="#EMPService">EMPService</a>) AddUpdateAddress(r *<a href="/pkg/net/http/">http</a>.<a href="/pkg/net/http/#Request">Request</a>, args *<a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#AddressDetail">AddressDetail</a>, reply *<a href="#NilParam">NilParam</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EMPService.ConnectionStatus">func (*EMPService) <a href="/src/pkg/emp/local/localapi/rpcfunc.go?s=944:1038#L32">ConnectionStatus</a></h3>
+				<pre>func (service *<a href="#EMPService">EMPService</a>) ConnectionStatus(r *<a href="/pkg/net/http/">http</a>.<a href="/pkg/net/http/#Request">Request</a>, args *<a href="#NilParam">NilParam</a>, reply *<a href="/pkg/builtin/#int">int</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EMPService.CreateAddress">func (*EMPService) <a href="/src/pkg/emp/local/localapi/rpcfunc.go?s=1877:1986#L70">CreateAddress</a></h3>
+				<pre>func (service *<a href="#EMPService">EMPService</a>) CreateAddress(r *<a href="/pkg/net/http/">http</a>.<a href="/pkg/net/http/#Request">Request</a>, args *<a href="#NilParam">NilParam</a>, reply *<a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#AddressDetail">AddressDetail</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EMPService.DeleteMessage">func (*EMPService) <a href="/src/pkg/emp/local/localapi/rpcmsg.go?s=4566:4660#L164">DeleteMessage</a></h3>
+				<pre>func (service *<a href="#EMPService">EMPService</a>) DeleteMessage(r *<a href="/pkg/net/http/">http</a>.<a href="/pkg/net/http/#Request">Request</a>, args *[]<a href="/pkg/builtin/#byte">byte</a>, reply *<a href="#NilParam">NilParam</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EMPService.ForgetAddress">func (*EMPService) <a href="/src/pkg/emp/local/localapi/rpcfunc.go?s=460:554#L16">ForgetAddress</a></h3>
+				<pre>func (service *<a href="#EMPService">EMPService</a>) ForgetAddress(r *<a href="/pkg/net/http/">http</a>.<a href="/pkg/net/http/#Request">Request</a>, args *<a href="/pkg/builtin/#string">string</a>, reply *<a href="#NilParam">NilParam</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EMPService.GetAddress">func (*EMPService) <a href="/src/pkg/emp/local/localapi/rpcfunc.go?s=3250:3354#L119">GetAddress</a></h3>
+				<pre>func (service *<a href="#EMPService">EMPService</a>) GetAddress(r *<a href="/pkg/net/http/">http</a>.<a href="/pkg/net/http/#Request">Request</a>, args *<a href="/pkg/builtin/#string">string</a>, reply *<a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#AddressDetail">AddressDetail</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EMPService.GetEncrypted">func (*EMPService) <a href="/src/pkg/emp/local/localapi/rpcmsg.go?s=11240:11352#L386">GetEncrypted</a></h3>
+				<pre>func (service *<a href="#EMPService">EMPService</a>) GetEncrypted(r *<a href="/pkg/net/http/">http</a>.<a href="/pkg/net/http/#Request">Request</a>, args *[]<a href="/pkg/builtin/#byte">byte</a>, reply *<a href="/pkg/emp/encryption/">encryption</a>.<a href="/pkg/emp/encryption/#EncryptedMessage">EncryptedMessage</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EMPService.GetLabel">func (*EMPService) <a href="/src/pkg/emp/local/localapi/rpcfunc.go?s=1246:1333#L42">GetLabel</a></h3>
+				<pre>func (service *<a href="#EMPService">EMPService</a>) GetLabel(r *<a href="/pkg/net/http/">http</a>.<a href="/pkg/net/http/#Request">Request</a>, args *<a href="/pkg/builtin/#string">string</a>, reply *<a href="/pkg/builtin/#string">string</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EMPService.Inbox">func (*EMPService) <a href="/src/pkg/emp/local/localapi/rpcmsg.go?s=10268:10369#L356">Inbox</a></h3>
+				<pre>func (service *<a href="#EMPService">EMPService</a>) Inbox(r *<a href="/pkg/net/http/">http</a>.<a href="/pkg/net/http/#Request">Request</a>, args *<a href="#NilParam">NilParam</a>, reply *[]<a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#MetaMessage">MetaMessage</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EMPService.ListAddresses">func (*EMPService) <a href="/src/pkg/emp/local/localapi/rpcfunc.go?s=4399:4496#L166">ListAddresses</a></h3>
+				<pre>func (service *<a href="#EMPService">EMPService</a>) ListAddresses(r *<a href="/pkg/net/http/">http</a>.<a href="/pkg/net/http/#Request">Request</a>, args *<a href="/pkg/builtin/#bool">bool</a>, reply *([][2]<a href="/pkg/builtin/#string">string</a>)) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EMPService.ListMessagesByRecpient">func (*EMPService) <a href="/src/pkg/emp/local/localapi/rpcmsg.go?s=9931:10047#L346">ListMessagesByRecpient</a></h3>
+				<pre>func (service *<a href="#EMPService">EMPService</a>) ListMessagesByRecpient(r *<a href="/pkg/net/http/">http</a>.<a href="/pkg/net/http/#Request">Request</a>, args *<a href="/pkg/builtin/#string">string</a>, reply *[]<a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#MetaMessage">MetaMessage</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EMPService.ListMessagesBySender">func (*EMPService) <a href="/src/pkg/emp/local/localapi/rpcmsg.go?s=9599:9713#L336">ListMessagesBySender</a></h3>
+				<pre>func (service *<a href="#EMPService">EMPService</a>) ListMessagesBySender(r *<a href="/pkg/net/http/">http</a>.<a href="/pkg/net/http/#Request">Request</a>, args *<a href="/pkg/builtin/#string">string</a>, reply *[]<a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#MetaMessage">MetaMessage</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EMPService.OpenMessage">func (*EMPService) <a href="/src/pkg/emp/local/localapi/rpcmsg.go?s=11725:11828#L405">OpenMessage</a></h3>
+				<pre>func (service *<a href="#EMPService">EMPService</a>) OpenMessage(r *<a href="/pkg/net/http/">http</a>.<a href="/pkg/net/http/#Request">Request</a>, args *[]<a href="/pkg/builtin/#byte">byte</a>, reply *<a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#FullMessage">FullMessage</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EMPService.Outbox">func (*EMPService) <a href="/src/pkg/emp/local/localapi/rpcmsg.go?s=10590:10692#L366">Outbox</a></h3>
+				<pre>func (service *<a href="#EMPService">EMPService</a>) Outbox(r *<a href="/pkg/net/http/">http</a>.<a href="/pkg/net/http/#Request">Request</a>, args *<a href="#NilParam">NilParam</a>, reply *[]<a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#MetaMessage">MetaMessage</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EMPService.PublishMessage">func (*EMPService) <a href="/src/pkg/emp/local/localapi/rpcmsg.go?s=1013:1113#L41">PublishMessage</a></h3>
+				<pre>func (service *<a href="#EMPService">EMPService</a>) PublishMessage(r *<a href="/pkg/net/http/">http</a>.<a href="/pkg/net/http/#Request">Request</a>, args *<a href="#SendMsg">SendMsg</a>, reply *<a href="#SendResponse">SendResponse</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EMPService.PurgeMessage">func (*EMPService) <a href="/src/pkg/emp/local/localapi/rpcmsg.go?s=3850:3943#L137">PurgeMessage</a></h3>
+				<pre>func (service *<a href="#EMPService">EMPService</a>) PurgeMessage(r *<a href="/pkg/net/http/">http</a>.<a href="/pkg/net/http/#Request">Request</a>, args *[]<a href="/pkg/builtin/#byte">byte</a>, reply *<a href="#NilParam">NilParam</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EMPService.SendMessage">func (*EMPService) <a href="/src/pkg/emp/local/localapi/rpcmsg.go?s=5922:6019#L215">SendMessage</a></h3>
+				<pre>func (service *<a href="#EMPService">EMPService</a>) SendMessage(r *<a href="/pkg/net/http/">http</a>.<a href="/pkg/net/http/#Request">Request</a>, args *<a href="#SendMsg">SendMsg</a>, reply *<a href="#SendResponse">SendResponse</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EMPService.SendRawMsg">func (*EMPService) <a href="/src/pkg/emp/local/localapi/rpcmsg.go?s=4765:4856#L171">SendRawMsg</a></h3>
+				<pre>func (service *<a href="#EMPService">EMPService</a>) SendRawMsg(r *<a href="/pkg/net/http/">http</a>.<a href="/pkg/net/http/#Request">Request</a>, args *<a href="#RawMsg">RawMsg</a>, reply *<a href="#NilParam">NilParam</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EMPService.Sendbox">func (*EMPService) <a href="/src/pkg/emp/local/localapi/rpcmsg.go?s=10914:11017#L376">Sendbox</a></h3>
+				<pre>func (service *<a href="#EMPService">EMPService</a>) Sendbox(r *<a href="/pkg/net/http/">http</a>.<a href="/pkg/net/http/#Request">Request</a>, args *<a href="#NilParam">NilParam</a>, reply *[]<a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#MetaMessage">MetaMessage</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EMPService.Version">func (*EMPService) <a href="/src/pkg/emp/local/localapi/localapi.go?s=718:809#L28">Version</a></h3>
+				<pre>func (s *<a href="#EMPService">EMPService</a>) Version(r *<a href="/pkg/net/http/">http</a>.<a href="/pkg/net/http/#Request">Request</a>, args *<a href="#NilParam">NilParam</a>, reply *<a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#Version">Version</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="NilParam">type <a href="/src/pkg/emp/local/localapi/localapi.go?s=694:716#L26">NilParam</a></h2>
+			<pre>type NilParam struct{}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="PubMsg">type <a href="/src/pkg/emp/local/localapi/rpcmsg.go?s=739:865#L29">PubMsg</a></h2>
+			<pre>type PubMsg struct {
+    Sender    <a href="/pkg/builtin/#string">string</a> `json:&#34;sender&#34;`
+    Subject   <a href="/pkg/builtin/#string">string</a> `json:&#34;subject&#34;`
+    Plaintext <a href="/pkg/builtin/#string">string</a> `json:&#34;content&#34;`
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="RawMsg">type <a href="/src/pkg/emp/local/localapi/rpcmsg.go?s=867:1011#L35">RawMsg</a></h2>
+			<pre>type RawMsg struct {
+    Message      <a href="/pkg/emp/objects/">objects</a>.<a href="/pkg/emp/objects/#Message">Message</a> `json:&#34;message&#34;`
+    SendAddress  <a href="/pkg/builtin/#string">string</a>          `json:&#34;sender&#34;`
+    Subscription <a href="/pkg/builtin/#bool">bool</a>            `json:&#34;is_subscription&#34;`
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="SendMsg">type <a href="/src/pkg/emp/local/localapi/rpcmsg.go?s=476:640#L17">SendMsg</a></h2>
+			<pre>type SendMsg struct {
+    Sender    <a href="/pkg/builtin/#string">string</a> `json:&#34;sender&#34;`
+    Recipient <a href="/pkg/builtin/#string">string</a> `json:&#34;recipient&#34;`
+    Subject   <a href="/pkg/builtin/#string">string</a> `json:&#34;subject&#34;`
+    Plaintext <a href="/pkg/builtin/#string">string</a> `json:&#34;content&#34;`
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="SendResponse">type <a href="/src/pkg/emp/local/localapi/rpcmsg.go?s=642:737#L24">SendResponse</a></h2>
+			<pre>type SendResponse struct {
+    TxidHash []<a href="/pkg/builtin/#byte">byte</a> `json:&#34;txid_hash&#34;`
+    IsSent   <a href="/pkg/builtin/#bool">bool</a>   `json:&#34;sent&#34;`
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.2.<br>
+Except as <a href="http://code.google.com/policies.html#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="/LICENSE">BSD license</a>.<br>
+<a href="/doc/tos.html">Terms of Service</a> | 
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+
+<script type="text/javascript" src="/lib/godoc/jquery.js"></script>
+
+<script type="text/javascript" src="/lib/godoc/godocs.js"></script>
+
+</body>
+</html>
+

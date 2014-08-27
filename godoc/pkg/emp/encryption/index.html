@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <title>encryption - The Go Programming Language</title>
+
+<link type="text/css" rel="stylesheet" href="/lib/godoc/style.css">
+
+<script type="text/javascript">window.initFuncs = [];</script>
+</head>
+<body>
+
+<div id="topbar" class="wide"><div class="container">
+
+<form method="GET" action="/search">
+<div id="menu">
+<a href="/doc/">Documents</a>
+<a href="/pkg/">Packages</a>
+<a href="/project/">The Project</a>
+<a href="/help/">Help</a>
+<a href="/blog/">Blog</a>
+
+<input type="text" id="search" name="q" class="inactive" value="Search" placeholder="Search">
+</div>
+<div id="heading"><a href="/">The Go Programming Language</a></div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <div id="plusone"><g:plusone size="small" annotation="none"></g:plusone></div>
+  <h1>Package encryption</h1>
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "emp/encryption"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package encryption wraps around Go&#39;s native crypto library to provide
+ECIES and AES-256 encryption for EMP Basic and Published Messages.
+</p>
+
+			</div>
+		</div>
+		
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+				
+				<dd><a href="#AddressToString">func AddressToString(addr []byte) string</a></dd>
+			
+				
+				<dd><a href="#CreateKey">func CreateKey(log chan string) ([]byte, *big.Int, *big.Int)</a></dd>
+			
+				
+				<dd><a href="#Decrypt">func Decrypt(log chan string, privKey []byte, encrypted *EncryptedMessage) []byte</a></dd>
+			
+				
+				<dd><a href="#DecryptPub">func DecryptPub(log chan string, pubkey []byte, encrypted *EncryptedMessage) []byte</a></dd>
+			
+				
+				<dd><a href="#GUID">func GUID(bytes int)</a></dd>
+			
+				
+				<dd><a href="#GetAddress">func GetAddress(log chan string, x, y *big.Int) []byte</a></dd>
+			
+				
+				<dd><a href="#GetCurve">func GetCurve() elliptic.Curve</a></dd>
+			
+				
+				<dd><a href="#MarshalPubkey">func MarshalPubkey(x, y *big.Int) []byte</a></dd>
+			
+				
+				<dd><a href="#StringToAddress">func StringToAddress(addr string) []byte</a></dd>
+			
+				
+				<dd><a href="#SymmetricDecrypt">func SymmetricDecrypt(IV [aes.BlockSize]byte, key, cipherText []byte) []byte</a></dd>
+			
+				
+				<dd><a href="#SymmetricEncrypt">func SymmetricEncrypt(key []byte, plainText string) ([aes.BlockSize]byte, []byte, error)</a></dd>
+			
+				
+				<dd><a href="#UnmarshalPubkey">func UnmarshalPubkey(data []byte) (x, y *big.Int)</a></dd>
+			
+				
+				<dd><a href="#ValidateAddress">func ValidateAddress(addr []byte) bool</a></dd>
+			
+			
+				
+				<dd><a href="#EncryptedMessage">type EncryptedMessage</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Encrypt">func Encrypt(log chan string, dest_pubkey []byte, plainText string) *EncryptedMessage</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EncryptPub">func EncryptPub(log chan string, src_privkey []byte, plainText string) *EncryptedMessage</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EncryptedMessage.FromBytes">func (ret *EncryptedMessage) FromBytes(b []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EncryptedMessage.GetBytes">func (e *EncryptedMessage) GetBytes() []byte</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h4>Package files</h4>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="/src/pkg/emp/encryption/address.go">address.go</a>
+			
+				<a href="/src/pkg/emp/encryption/encrypted_data.go">encrypted_data.go</a>
+			
+				<a href="/src/pkg/emp/encryption/guid.go">guid.go</a>
+			
+				<a href="/src/pkg/emp/encryption/message.go">message.go</a>
+			
+				<a href="/src/pkg/emp/encryption/symmetric.go">symmetric.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+		
+		
+			
+			
+			<h2 id="AddressToString">func <a href="/src/pkg/emp/encryption/address.go?s=2303:2343#L87">AddressToString</a></h2>
+			<pre>func AddressToString(addr []<a href="/pkg/builtin/#byte">byte</a>) <a href="/pkg/builtin/#string">string</a></pre>
+			<p>
+Converts 25-byte address to String representation.
+</p>
+
+			
+		
+			
+			
+			<h2 id="CreateKey">func <a href="/src/pkg/emp/encryption/address.go?s=526:586#L15">CreateKey</a></h2>
+			<pre>func CreateKey(log chan <a href="/pkg/builtin/#string">string</a>) ([]<a href="/pkg/builtin/#byte">byte</a>, *<a href="/pkg/math/big/">big</a>.<a href="/pkg/math/big/#Int">Int</a>, *<a href="/pkg/math/big/">big</a>.<a href="/pkg/math/big/#Int">Int</a>)</pre>
+			<p>
+Create a new Public-Private ECC-256 Keypair.
+</p>
+
+			
+		
+			
+			
+			<h2 id="Decrypt">func <a href="/src/pkg/emp/encryption/message.go?s=2707:2788#L84">Decrypt</a></h2>
+			<pre>func Decrypt(log chan <a href="/pkg/builtin/#string">string</a>, privKey []<a href="/pkg/builtin/#byte">byte</a>, encrypted *<a href="#EncryptedMessage">EncryptedMessage</a>) []<a href="/pkg/builtin/#byte">byte</a></pre>
+			<p>
+Decrypt a given Encrypted Message using the given private key.
+&lt;Nil&gt; is returned if the key fails the HMAC-SHA256 test.
+</p>
+
+			
+		
+			
+			
+			<h2 id="DecryptPub">func <a href="/src/pkg/emp/encryption/message.go?s=3553:3636#L111">DecryptPub</a></h2>
+			<pre>func DecryptPub(log chan <a href="/pkg/builtin/#string">string</a>, pubkey []<a href="/pkg/builtin/#byte">byte</a>, encrypted *<a href="#EncryptedMessage">EncryptedMessage</a>) []<a href="/pkg/builtin/#byte">byte</a></pre>
+			<p>
+Decrypt the given Published Message using the given Pubkey.
+&lt;Nil&gt; is returned if the HMAC-SHA256 test fails.
+</p>
+
+			
+		
+			
+			
+			<h2 id="GUID">func <a href="/src/pkg/emp/encryption/guid.go?s=404:424#L10">GUID</a></h2>
+			<pre>func GUID(bytes <a href="/pkg/builtin/#int">int</a>)</pre>
+			<p>
+Print a randomly-generated string.
+</p>
+
+			
+		
+			
+			
+			<h2 id="GetAddress">func <a href="/src/pkg/emp/encryption/address.go?s=1252:1306#L39">GetAddress</a></h2>
+			<pre>func GetAddress(log chan <a href="/pkg/builtin/#string">string</a>, x, y *<a href="/pkg/math/big/">big</a>.<a href="/pkg/math/big/#Int">Int</a>) []<a href="/pkg/builtin/#byte">byte</a></pre>
+			<p>
+Convert ECC-256 Public Key to an EMP address (raw 25 bytes).
+</p>
+
+			
+		
+			
+			
+			<h2 id="GetCurve">func <a href="/src/pkg/emp/encryption/address.go?s=1128:1158#L34">GetCurve</a></h2>
+			<pre>func GetCurve() <a href="/pkg/crypto/elliptic/">elliptic</a>.<a href="/pkg/crypto/elliptic/#Curve">Curve</a></pre>
+			
+			
+		
+			
+			
+			<h2 id="MarshalPubkey">func <a href="/src/pkg/emp/encryption/address.go?s=846:886#L25">MarshalPubkey</a></h2>
+			<pre>func MarshalPubkey(x, y *<a href="/pkg/math/big/">big</a>.<a href="/pkg/math/big/#Int">Int</a>) []<a href="/pkg/builtin/#byte">byte</a></pre>
+			<p>
+Convert public key to uncompressed 65-byte slice (2 32-bit integers with prefix 0x04)
+</p>
+
+			
+		
+			
+			
+			<h2 id="StringToAddress">func <a href="/src/pkg/emp/encryption/address.go?s=2529:2569#L96">StringToAddress</a></h2>
+			<pre>func StringToAddress(addr <a href="/pkg/builtin/#string">string</a>) []<a href="/pkg/builtin/#byte">byte</a></pre>
+			<p>
+Converts String representation to 25-byte address.
+</p>
+
+			
+		
+			
+			
+			<h2 id="SymmetricDecrypt">func <a href="/src/pkg/emp/encryption/symmetric.go?s=1519:1595#L53">SymmetricDecrypt</a></h2>
+			<pre>func SymmetricDecrypt(IV [<a href="/pkg/crypto/aes/">aes</a>.<a href="/pkg/crypto/aes/#BlockSize">BlockSize</a>]<a href="/pkg/builtin/#byte">byte</a>, key, cipherText []<a href="/pkg/builtin/#byte">byte</a>) []<a href="/pkg/builtin/#byte">byte</a></pre>
+			<p>
+Decrypted cipherText encrypted with AES-256 using the given IV and key.
+</p>
+
+			
+		
+			
+			
+			<h2 id="SymmetricEncrypt">func <a href="/src/pkg/emp/encryption/symmetric.go?s=599:687#L14">SymmetricEncrypt</a></h2>
+			<pre>func SymmetricEncrypt(key []<a href="/pkg/builtin/#byte">byte</a>, plainText <a href="/pkg/builtin/#string">string</a>) ([<a href="/pkg/crypto/aes/">aes</a>.<a href="/pkg/crypto/aes/#BlockSize">BlockSize</a>]<a href="/pkg/builtin/#byte">byte</a>, []<a href="/pkg/builtin/#byte">byte</a>, <a href="/pkg/builtin/#error">error</a>)</pre>
+			<p>
+Symmetrically encryptes plainText using AES-256 and the given key. Returns the IV and ciphertext.
+</p>
+<p>
+Special Case: If the key is length 25-bytes (an address), it is padded to 32-bytes with 0x00.
+</p>
+
+			
+		
+			
+			
+			<h2 id="UnmarshalPubkey">func <a href="/src/pkg/emp/encryption/address.go?s=1023:1072#L30">UnmarshalPubkey</a></h2>
+			<pre>func UnmarshalPubkey(data []<a href="/pkg/builtin/#byte">byte</a>) (x, y *<a href="/pkg/math/big/">big</a>.<a href="/pkg/math/big/#Int">Int</a>)</pre>
+			<p>
+Convert 65-byte slice as created by MarshalPubkey() into an ECC-256 Public Key.
+</p>
+
+			
+		
+			
+			
+			<h2 id="ValidateAddress">func <a href="/src/pkg/emp/encryption/address.go?s=1997:2035#L69">ValidateAddress</a></h2>
+			<pre>func ValidateAddress(addr []<a href="/pkg/builtin/#byte">byte</a>) <a href="/pkg/builtin/#bool">bool</a></pre>
+			<p>
+Determine if address is valid (checksum is correct, correct length, and it starts with a 1-byte number).
+</p>
+
+			
+		
+		
+			
+			
+			<h2 id="EncryptedMessage">type <a href="/src/pkg/emp/encryption/encrypted_data.go?s=349:656#L6">EncryptedMessage</a></h2>
+			<pre>type EncryptedMessage struct {
+    IV         [16]<a href="/pkg/builtin/#byte">byte</a> <span class="comment">// Initialization Vector for AES encryption</span>
+    PublicKey  [65]<a href="/pkg/builtin/#byte">byte</a> <span class="comment">// Random Public Key used for decryption</span>
+    CipherText []<a href="/pkg/builtin/#byte">byte</a>   <span class="comment">// CipherText, length is multiple of AES blocksize</span>
+    HMAC       [32]<a href="/pkg/builtin/#byte">byte</a> <span class="comment">// HMAC-SHA256, used to validate key before decryption</span>
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="Encrypt">func <a href="/src/pkg/emp/encryption/message.go?s=632:717#L15">Encrypt</a></h3>
+				<pre>func Encrypt(log chan <a href="/pkg/builtin/#string">string</a>, dest_pubkey []<a href="/pkg/builtin/#byte">byte</a>, plainText <a href="/pkg/builtin/#string">string</a>) *<a href="#EncryptedMessage">EncryptedMessage</a></pre>
+				<p>
+Encrypt plainText into an Encrypted Message using the given public key.
+</p>
+
+				
+			
+				
+				<h3 id="EncryptPub">func <a href="/src/pkg/emp/encryption/message.go?s=1583:1671#L46">EncryptPub</a></h3>
+				<pre>func EncryptPub(log chan <a href="/pkg/builtin/#string">string</a>, src_privkey []<a href="/pkg/builtin/#byte">byte</a>, plainText <a href="/pkg/builtin/#string">string</a>) *<a href="#EncryptedMessage">EncryptedMessage</a></pre>
+				<p>
+Encrypt plainText into an Encrypted Published Message using the given private key.
+</p>
+
+				
+			
+
+			
+				
+				<h3 id="EncryptedMessage.FromBytes">func (*EncryptedMessage) <a href="/src/pkg/emp/encryption/encrypted_data.go?s=758:812#L20">FromBytes</a></h3>
+				<pre>func (ret *<a href="#EncryptedMessage">EncryptedMessage</a>) FromBytes(b []<a href="/pkg/builtin/#byte">byte</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EncryptedMessage.GetBytes">func (*EncryptedMessage) <a href="/src/pkg/emp/encryption/encrypted_data.go?s=1193:1237#L36">GetBytes</a></h3>
+				<pre>func (e *<a href="#EncryptedMessage">EncryptedMessage</a>) GetBytes() []<a href="/pkg/builtin/#byte">byte</a></pre>
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.2.<br>
+Except as <a href="http://code.google.com/policies.html#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="/LICENSE">BSD license</a>.<br>
+<a href="/doc/tos.html">Terms of Service</a> | 
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+
+<script type="text/javascript" src="/lib/godoc/jquery.js"></script>
+
+<script type="text/javascript" src="/lib/godoc/godocs.js"></script>
+
+</body>
+</html>
+

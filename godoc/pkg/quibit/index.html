@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <title>quibit - The Go Programming Language</title>
+
+<link type="text/css" rel="stylesheet" href="/lib/godoc/style.css">
+
+<script type="text/javascript">window.initFuncs = [];</script>
+</head>
+<body>
+
+<div id="topbar" class="wide"><div class="container">
+
+<form method="GET" action="/search">
+<div id="menu">
+<a href="/doc/">Documents</a>
+<a href="/pkg/">Packages</a>
+<a href="/project/">The Project</a>
+<a href="/help/">Help</a>
+<a href="/blog/">Blog</a>
+
+<input type="text" id="search" name="q" class="inactive" value="Search" placeholder="Search">
+</div>
+<div id="heading"><a href="/">The Go Programming Language</a></div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <div id="plusone"><g:plusone size="small" annotation="none"></g:plusone></div>
+  <h1>Package quibit</h1>
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "quibit"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package quibit provides basic Peer-To-Peer asynchronous network
+functionality and peer management.
+</p>
+
+			</div>
+		</div>
+		
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="#pkg-constants">Constants</a></dd>
+			
+			
+			
+				
+				<dd><a href="#Cleanup">func Cleanup()</a></dd>
+			
+				
+				<dd><a href="#Initialize">func Initialize(log chan string, recvChan, sendChan chan Frame, peerChan chan Peer, port uint16) error</a></dd>
+			
+				
+				<dd><a href="#KillPeer">func KillPeer(p string)</a></dd>
+			
+				
+				<dd><a href="#Status">func Status() int</a></dd>
+			
+			
+				
+				<dd><a href="#Frame">type Frame</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Frame.Configure">func (f *Frame) Configure(data []byte, command, t uint8)</a></dd>
+				
+			
+				
+				<dd><a href="#Header">type Header</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Header.Configure">func (h *Header) Configure(data []byte)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Header.FromBytes">func (h *Header) FromBytes(b []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Header.ToBytes">func (h *Header) ToBytes() ([]byte, error)</a></dd>
+				
+			
+				
+				<dd><a href="#Peer">type Peer</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#GetPeer">func GetPeer(p string) *Peer</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Peer.Disconnect">func (p *Peer) Disconnect()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Peer.IsConnected">func (p *Peer) IsConnected() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Peer.String">func (p *Peer) String() string</a></dd>
+				
+			
+				
+				<dd><a href="#QuibitError">type QuibitError</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#QuibitError.Error">func (e QuibitError) Error() string</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h4>Package files</h4>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="/src/pkg/quibit/error.go">error.go</a>
+			
+				<a href="/src/pkg/quibit/frame.go">frame.go</a>
+			
+				<a href="/src/pkg/quibit/header.go">header.go</a>
+			
+				<a href="/src/pkg/quibit/peer.go">peer.go</a>
+			
+				<a href="/src/pkg/quibit/quibit.go">quibit.go</a>
+			
+				<a href="/src/pkg/quibit/recvUtil.go">recvUtil.go</a>
+			
+				<a href="/src/pkg/quibit/server.go">server.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				<pre>const (
+    <span id="BROADCAST">BROADCAST</span> = <a href="/pkg/builtin/#iota">iota</a>
+    <span id="REQUEST">REQUEST</span>   = <a href="/pkg/builtin/#iota">iota</a>
+    <span id="REPLY">REPLY</span>     = <a href="/pkg/builtin/#iota">iota</a>
+)</pre>
+				<p>
+Message Types:
+</p>
+<p>
+Broadcast goes to all connected peers except for the Peer specified in the Frame.
+</p>
+<p>
+Request and Reply go to the Peer specified in the Frame.
+</p>
+
+			
+				<pre>const (
+    <span id="MAGIC">MAGIC</span> = 6667787
+)</pre>
+				
+			
+		
+		
+		
+			
+			
+			<h2 id="Cleanup">func <a href="/src/pkg/quibit/quibit.go?s=1629:1643#L59">Cleanup</a></h2>
+			<pre>func Cleanup()</pre>
+			<p>
+Cleanup the Quibit Service
+</p>
+<p>
+End the mux and server routines, and Disconnect from all peers.
+</p>
+
+			
+		
+			
+			
+			<h2 id="Initialize">func <a href="/src/pkg/quibit/quibit.go?s=1162:1264#L38">Initialize</a></h2>
+			<pre>func Initialize(log chan <a href="/pkg/builtin/#string">string</a>, recvChan, sendChan chan <a href="#Frame">Frame</a>, peerChan chan <a href="#Peer">Peer</a>, port <a href="/pkg/builtin/#uint16">uint16</a>) <a href="/pkg/builtin/#error">error</a></pre>
+			<p>
+Initialize the Quibit Service
+</p>
+<p>
+Frames from the network will be sent to recvChan, and includes the sending peer
+</p>
+<p>
+Frames for the network should be sent to sendChan, and include the receiving peer
+</p>
+<p>
+New Peers for connecting should be sent to peerChan.
+</p>
+<p>
+A local server will be started on the port specified by &#34;port&#34;
+</p>
+<p>
+If an error is returned, than neither the server or mux has been started.
+</p>
+
+			
+		
+			
+			
+			<h2 id="KillPeer">func <a href="/src/pkg/quibit/quibit.go?s=1782:1805#L67">KillPeer</a></h2>
+			<pre>func KillPeer(p <a href="/pkg/builtin/#string">string</a>)</pre>
+			<p>
+KillPeer Force Disconnects from a Peer
+</p>
+<p>
+All incoming data is dropped and the peer is removed from the Peer List
+</p>
+
+			
+		
+			
+			
+			<h2 id="Status">func <a href="/src/pkg/quibit/quibit.go?s=2326:2343#L94">Status</a></h2>
+			<pre>func Status() <a href="/pkg/builtin/#int">int</a></pre>
+			<p>
+Status returns the Current Connection Status
+</p>
+<p>
+Returns 0 on disconnected.
+Returns 1 on Client Connection (Outgoing Connections Only).
+Returns 2 On Full Connection (Incoming and Outgoing Connections).
+</p>
+
+			
+		
+		
+			
+			
+			<h2 id="Frame">type <a href="/src/pkg/quibit/frame.go?s=320:492#L5">Frame</a></h2>
+			<pre>type Frame struct {
+    Peer    <a href="/pkg/builtin/#string">string</a> <span class="comment">// Peer who sent or will receive this frame</span>
+    Header  <a href="#Header">Header</a> <span class="comment">// Header associated with frame</span>
+    Payload []<a href="/pkg/builtin/#byte">byte</a> <span class="comment">// Serialize frame payload</span>
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="Frame.Configure">func (*Frame) <a href="/src/pkg/quibit/frame.go?s=583:639#L13">Configure</a></h3>
+				<pre>func (f *<a href="#Frame">Frame</a>) Configure(data []<a href="/pkg/builtin/#byte">byte</a>, command, t <a href="/pkg/builtin/#uint8">uint8</a>)</pre>
+				<p>
+Configure Frame f with a proper header for
+payload &#34;data&#34; interpreted as &#34;command&#34;
+</p>
+
+				
+				
+			
+		
+			
+			
+			<h2 id="Header">type <a href="/src/pkg/quibit/header.go?s=426:673#L12">Header</a></h2>
+			<pre>type Header struct {
+    Magic    <a href="/pkg/builtin/#uint32">uint32</a>   <span class="comment">// Known magic number</span>
+    Command  <a href="/pkg/builtin/#uint8">uint8</a>    <span class="comment">// How to interpret payload</span>
+    Type     <a href="/pkg/builtin/#uint8">uint8</a>    <span class="comment">// How to interpret payload</span>
+    Checksum [48]<a href="/pkg/builtin/#byte">byte</a> <span class="comment">// SHA-384 Checksum of Payload</span>
+    Length   <a href="/pkg/builtin/#uint32">uint32</a>   <span class="comment">// Length of Payload</span>
+}</pre>
+			<p>
+Used as a fixed-length description of a frame
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="Header.Configure">func (*Header) <a href="/src/pkg/quibit/header.go?s=725:764#L21">Configure</a></h3>
+				<pre>func (h *<a href="#Header">Header</a>) Configure(data []<a href="/pkg/builtin/#byte">byte</a>)</pre>
+				<p>
+Configure a new header given the frame payload
+</p>
+
+				
+				
+			
+				
+				<h3 id="Header.FromBytes">func (*Header) <a href="/src/pkg/quibit/header.go?s=1079:1121#L35">FromBytes</a></h3>
+				<pre>func (h *<a href="#Header">Header</a>) FromBytes(b []<a href="/pkg/builtin/#byte">byte</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				<p>
+Unserialize header from the wire
+</p>
+
+				
+				
+			
+				
+				<h3 id="Header.ToBytes">func (*Header) <a href="/src/pkg/quibit/header.go?s=897:939#L28">ToBytes</a></h3>
+				<pre>func (h *<a href="#Header">Header</a>) ToBytes() ([]<a href="/pkg/builtin/#byte">byte</a>, <a href="/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Serialize Header for sending over the wire
+</p>
+
+				
+				
+			
+		
+			
+			
+			<h2 id="Peer">type <a href="/src/pkg/quibit/peer.go?s=365:501#L12">Peer</a></h2>
+			<pre>type Peer struct {
+    IP   <a href="/pkg/net/">net</a>.<a href="/pkg/net/#IP">IP</a> <span class="comment">// Standard 16-byte IP Address</span>
+    Port <a href="/pkg/builtin/#uint16">uint16</a> <span class="comment">// Standard 2-byte TCP Port</span>
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="GetPeer">func <a href="/src/pkg/quibit/quibit.go?s=2000:2028#L79">GetPeer</a></h3>
+				<pre>func GetPeer(p <a href="/pkg/builtin/#string">string</a>) *<a href="#Peer">Peer</a></pre>
+				<p>
+Get Peer associated with the given &lt;IP&gt;:&lt;Host&gt; string
+</p>
+<p>
+&lt;nil&gt; Signifies a disconnected or unknown peer.
+</p>
+
+				
+			
+
+			
+				
+				<h3 id="Peer.Disconnect">func (*Peer) <a href="/src/pkg/quibit/peer.go?s=1792:1819#L90">Disconnect</a></h3>
+				<pre>func (p *<a href="#Peer">Peer</a>) Disconnect()</pre>
+				<p>
+Forces Disconnect from Peer and closes all incoming connections.
+</p>
+
+				
+				
+			
+				
+				<h3 id="Peer.IsConnected">func (*Peer) <a href="/src/pkg/quibit/peer.go?s=1145:1178#L53">IsConnected</a></h3>
+				<pre>func (p *<a href="#Peer">Peer</a>) IsConnected() <a href="/pkg/builtin/#bool">bool</a></pre>
+				<p>
+Returns the connection status of Peer
+</p>
+
+				
+				
+			
+				
+				<h3 id="Peer.String">func (*Peer) <a href="/src/pkg/quibit/peer.go?s=971:1001#L45">String</a></h3>
+				<pre>func (p *<a href="#Peer">Peer</a>) String() <a href="/pkg/builtin/#string">string</a></pre>
+				<p>
+String returns the &lt;IP&gt;:&lt;Host&gt; Identifier of Peer
+</p>
+
+				
+				
+			
+		
+			
+			
+			<h2 id="QuibitError">type <a href="/src/pkg/quibit/error.go?s=361:381#L6">QuibitError</a></h2>
+			<pre>type QuibitError <a href="/pkg/builtin/#int">int</a></pre>
+			<p>
+Error type for Quibit-Specific Errors
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="QuibitError.Error">func (QuibitError) <a href="/src/pkg/quibit/error.go?s=426:461#L13">Error</a></h3>
+				<pre>func (e <a href="#QuibitError">QuibitError</a>) Error() <a href="/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.2.<br>
+Except as <a href="http://code.google.com/policies.html#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="/LICENSE">BSD license</a>.<br>
+<a href="/doc/tos.html">Terms of Service</a> | 
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+
+<script type="text/javascript" src="/lib/godoc/jquery.js"></script>
+
+<script type="text/javascript" src="/lib/godoc/godocs.js"></script>
+
+</body>
+</html>
+

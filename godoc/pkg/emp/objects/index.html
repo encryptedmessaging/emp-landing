@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <title>objects - The Go Programming Language</title>
+
+<link type="text/css" rel="stylesheet" href="/lib/godoc/style.css">
+
+<script type="text/javascript">window.initFuncs = [];</script>
+</head>
+<body>
+
+<div id="topbar" class="wide"><div class="container">
+
+<form method="GET" action="/search">
+<div id="menu">
+<a href="/doc/">Documents</a>
+<a href="/pkg/">Packages</a>
+<a href="/project/">The Project</a>
+<a href="/help/">Help</a>
+<a href="/blog/">Blog</a>
+
+<input type="text" id="search" name="q" class="inactive" value="Search" placeholder="Search">
+</div>
+<div id="heading"><a href="/">The Go Programming Language</a></div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <div id="plusone"><g:plusone size="small" annotation="none"></g:plusone></div>
+  <h1>Package objects</h1>
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "emp/objects"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package objects provides all serializeable data structures within the EMProtocol.
+</p>
+
+			</div>
+		</div>
+		
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="#pkg-constants">Constants</a></dd>
+			
+			
+			
+				
+				<dd><a href="#MakeFrame">func MakeFrame(command, t uint8, payload Serializer) *quibit.Frame</a></dd>
+			
+			
+				
+				<dd><a href="#AddressDetail">type AddressDetail</a></dd>
+				
+				
+			
+				
+				<dd><a href="#DecryptedMessage">type DecryptedMessage</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DecryptedMessage.FromBytes">func (d *DecryptedMessage) FromBytes(data []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DecryptedMessage.GetBytes">func (d *DecryptedMessage) GetBytes() []byte</a></dd>
+				
+			
+				
+				<dd><a href="#EncryptedPubkey">type EncryptedPubkey</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EncryptedPubkey.FromBytes">func (e *EncryptedPubkey) FromBytes(data []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#EncryptedPubkey.GetBytes">func (e *EncryptedPubkey) GetBytes() []byte</a></dd>
+				
+			
+				
+				<dd><a href="#FullMessage">type FullMessage</a></dd>
+				
+				
+			
+				
+				<dd><a href="#Hash">type Hash</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#MakeHash">func MakeHash(data []byte) Hash</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Hash.FromBytes">func (h *Hash) FromBytes(data []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Hash.GetBytes">func (h *Hash) GetBytes() []byte</a></dd>
+				
+			
+				
+				<dd><a href="#Message">type Message</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Message.FromBytes">func (m *Message) FromBytes(data []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Message.GetBytes">func (m *Message) GetBytes() []byte</a></dd>
+				
+			
+				
+				<dd><a href="#MetaMessage">type MetaMessage</a></dd>
+				
+				
+			
+				
+				<dd><a href="#NilPayload">type NilPayload</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NilPayload.FromBytes">func (n *NilPayload) FromBytes(b []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NilPayload.GetBytes">func (n *NilPayload) GetBytes() []byte</a></dd>
+				
+			
+				
+				<dd><a href="#Node">type Node</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Node.FromString">func (n *Node) FromString(hostPort string) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Node.String">func (n *Node) String() string</a></dd>
+				
+			
+				
+				<dd><a href="#NodeList">type NodeList</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NodeList.FromBytes">func (n *NodeList) FromBytes(data []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NodeList.GetBytes">func (n *NodeList) GetBytes() []byte</a></dd>
+				
+			
+				
+				<dd><a href="#Obj">type Obj</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Obj.FromBytes">func (o *Obj) FromBytes(data []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Obj.GetBytes">func (o *Obj) GetBytes() []byte</a></dd>
+				
+			
+				
+				<dd><a href="#Purge">type Purge</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Purge.FromBytes">func (p *Purge) FromBytes(data []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Purge.GetBytes">func (p *Purge) GetBytes() []byte</a></dd>
+				
+			
+				
+				<dd><a href="#Serializer">type Serializer</a></dd>
+				
+				
+			
+				
+				<dd><a href="#Version">type Version</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Version.FromBytes">func (v *Version) FromBytes(data []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Version.GetBytes">func (v *Version) GetBytes() []byte</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h4>Package files</h4>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="/src/pkg/emp/objects/address.go">address.go</a>
+			
+				<a href="/src/pkg/emp/objects/interface.go">interface.go</a>
+			
+				<a href="/src/pkg/emp/objects/localmsg.go">localmsg.go</a>
+			
+				<a href="/src/pkg/emp/objects/message.go">message.go</a>
+			
+				<a href="/src/pkg/emp/objects/node.go">node.go</a>
+			
+				<a href="/src/pkg/emp/objects/obj.go">obj.go</a>
+			
+				<a href="/src/pkg/emp/objects/pubkey.go">pubkey.go</a>
+			
+				<a href="/src/pkg/emp/objects/purge.go">purge.go</a>
+			
+				<a href="/src/pkg/emp/objects/version.go">version.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				<pre>const (
+    <span id="VERSION">VERSION</span> = <a href="/pkg/builtin/#iota">iota</a>
+    <span id="PEER">PEER</span>    = <a href="/pkg/builtin/#iota">iota</a>
+    <span id="OBJ">OBJ</span>     = <a href="/pkg/builtin/#iota">iota</a>
+    <span id="GETOBJ">GETOBJ</span>  = <a href="/pkg/builtin/#iota">iota</a>
+
+    <span id="PUBKEY_REQUEST">PUBKEY_REQUEST</span> = <a href="/pkg/builtin/#iota">iota</a>
+    <span id="PUBKEY">PUBKEY</span>         = <a href="/pkg/builtin/#iota">iota</a>
+    <span id="MSG">MSG</span>            = <a href="/pkg/builtin/#iota">iota</a>
+    <span id="PURGE">PURGE</span>          = <a href="/pkg/builtin/#iota">iota</a>
+
+    <span id="CHECKTXID">CHECKTXID</span> = <a href="/pkg/builtin/#iota">iota</a>
+    <span id="PUB">PUB</span>       = <a href="/pkg/builtin/#iota">iota</a>
+)</pre>
+				<p>
+Message Command Types, See EMPv1 Specification
+</p>
+
+			
+				<pre>const (
+    <span id="BROADCAST">BROADCAST</span> = <a href="/pkg/builtin/#iota">iota</a>
+    <span id="REQUEST">REQUEST</span>   = <a href="/pkg/builtin/#iota">iota</a>
+    <span id="REPLY">REPLY</span>     = <a href="/pkg/builtin/#iota">iota</a>
+)</pre>
+				<p>
+Quibit Types, see package quibit.
+</p>
+
+			
+				<pre>const (
+    <span id="LOCAL_VERSION">LOCAL_VERSION</span> = 1
+    <span id="LOCAL_USER">LOCAL_USER</span>    = &#34;emp v0.1&#34;
+)</pre>
+				
+			
+		
+		
+		
+			
+			
+			<h2 id="MakeFrame">func <a href="/src/pkg/emp/objects/interface.go?s=732:798#L25">MakeFrame</a></h2>
+			<pre>func MakeFrame(command, t <a href="/pkg/builtin/#uint8">uint8</a>, payload <a href="#Serializer">Serializer</a>) *<a href="/pkg/quibit/">quibit</a>.<a href="/pkg/quibit/#Frame">Frame</a></pre>
+			<p>
+Creates a new Quibit Frame reading for sending from a Serializeable Object.
+</p>
+
+			
+		
+		
+			
+			
+			<h2 id="AddressDetail">type <a href="/src/pkg/emp/objects/address.go?s=329:1112#L4">AddressDetail</a></h2>
+			<pre>type AddressDetail struct {
+    String       <a href="/pkg/builtin/#string">string</a> `json:&#34;address&#34;`           <span class="comment">// String representation of address (33-35 characters)</span>
+    Address      []<a href="/pkg/builtin/#byte">byte</a> `json:&#34;address_bytes&#34;`     <span class="comment">// Byte representation of address (25 bytes)</span>
+    IsRegistered <a href="/pkg/builtin/#bool">bool</a>   `json:&#34;registered&#34;`        <span class="comment">// Whether EMPLocal is saving messages to this address.</span>
+    IsSubscribed <a href="/pkg/builtin/#bool">bool</a>   `json:&#34;subscribed&#34;`        <span class="comment">// Whether EMPLocal is saving Publications from this address.</span>
+    Pubkey       []<a href="/pkg/builtin/#byte">byte</a> `json:&#34;public_key&#34;`        <span class="comment">// Unencrypted 65-byte public key.</span>
+    Privkey      []<a href="/pkg/builtin/#byte">byte</a> `json:&#34;private_key&#34;`       <span class="comment">// Unencrypted 32-byte private key.</span>
+    EncPrivkey   []<a href="/pkg/builtin/#byte">byte</a> `json:&#34;encrypted_privkey&#34;` <span class="comment">// Encrypted private key (any length).</span>
+    Label        <a href="/pkg/builtin/#string">string</a> `json:&#34;address_label&#34;`     <span class="comment">// Human-readable label for this address.</span>
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="DecryptedMessage">type <a href="/src/pkg/emp/objects/localmsg.go?s=1059:1491#L26">DecryptedMessage</a></h2>
+			<pre>type DecryptedMessage struct {
+    Txid      [16]<a href="/pkg/builtin/#byte">byte</a> <span class="comment">// Randomly generated identifier and purge token.</span>
+    Pubkey    [65]<a href="/pkg/builtin/#byte">byte</a> <span class="comment">// Sender&#39;s 65-byte Public Key</span>
+    Subject   <a href="/pkg/builtin/#string">string</a>   <span class="comment">// Human-readable subject of this message</span>
+    MimeType  <a href="/pkg/builtin/#string">string</a>   <span class="comment">// Mime-Type of Content</span>
+    Length    <a href="/pkg/builtin/#uint32">uint32</a>   <span class="comment">// Length of Content in bytes</span>
+    Content   <a href="/pkg/builtin/#string">string</a>   <span class="comment">// Content of message, could be any data.</span>
+    Signature [65]<a href="/pkg/builtin/#byte">byte</a> <span class="comment">// Sender&#39;s Signature of entire message.</span>
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="DecryptedMessage.FromBytes">func (*DecryptedMessage) <a href="/src/pkg/emp/objects/localmsg.go?s=1915:1970#L58">FromBytes</a></h3>
+				<pre>func (d *<a href="#DecryptedMessage">DecryptedMessage</a>) FromBytes(data []<a href="/pkg/builtin/#byte">byte</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="DecryptedMessage.GetBytes">func (*DecryptedMessage) <a href="/src/pkg/emp/objects/localmsg.go?s=1493:1537#L36">GetBytes</a></h3>
+				<pre>func (d *<a href="#DecryptedMessage">DecryptedMessage</a>) GetBytes() []<a href="/pkg/builtin/#byte">byte</a></pre>
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="EncryptedPubkey">type <a href="/src/pkg/emp/objects/pubkey.go?s=388:626#L13">EncryptedPubkey</a></h2>
+			<pre>type EncryptedPubkey struct {
+    AddrHash <a href="#Hash">Hash</a>     <span class="comment">// Hash of address that own this public key.</span>
+    IV       [16]<a href="/pkg/builtin/#byte">byte</a> <span class="comment">// IV for AES-256 encryption of public key</span>
+    Payload  []<a href="/pkg/builtin/#byte">byte</a>   <span class="comment">// Public key encrypted with AES-256. The Address is the key.</span>
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="EncryptedPubkey.FromBytes">func (*EncryptedPubkey) <a href="/src/pkg/emp/objects/pubkey.go?s=864:918#L32">FromBytes</a></h3>
+				<pre>func (e *<a href="#EncryptedPubkey">EncryptedPubkey</a>) FromBytes(data []<a href="/pkg/builtin/#byte">byte</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="EncryptedPubkey.GetBytes">func (*EncryptedPubkey) <a href="/src/pkg/emp/objects/pubkey.go?s=628:671#L19">GetBytes</a></h3>
+				<pre>func (e *<a href="#EncryptedPubkey">EncryptedPubkey</a>) GetBytes() []<a href="/pkg/builtin/#byte">byte</a></pre>
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="FullMessage">type <a href="/src/pkg/emp/objects/localmsg.go?s=852:1057#L20">FullMessage</a></h2>
+			<pre>type FullMessage struct {
+    MetaMessage <a href="#MetaMessage">MetaMessage</a>                  `json:&#34;info&#34;`
+    Decrypted   *<a href="#DecryptedMessage">DecryptedMessage</a>            `json:&#34;decrypted&#34;`
+    Encrypted   *<a href="/pkg/emp/encryption/">encryption</a>.<a href="/pkg/emp/encryption/#EncryptedMessage">EncryptedMessage</a> `json:&#34;encrypted&#34;`
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Hash">type <a href="/src/pkg/emp/objects/obj.go?s=393:416#L13">Hash</a></h2>
+			<pre>type Hash [hashLen]<a href="/pkg/builtin/#byte">byte</a></pre>
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="MakeHash">func <a href="/src/pkg/emp/objects/obj.go?s=452:483#L16">MakeHash</a></h3>
+				<pre>func MakeHash(data []<a href="/pkg/builtin/#byte">byte</a>) <a href="#Hash">Hash</a></pre>
+				<p>
+Create a SHA-384 Hash of data.
+</p>
+
+				
+			
+
+			
+				
+				<h3 id="Hash.FromBytes">func (*Hash) <a href="/src/pkg/emp/objects/obj.go?s=661:704#L29">FromBytes</a></h3>
+				<pre>func (h *<a href="#Hash">Hash</a>) FromBytes(data []<a href="/pkg/builtin/#byte">byte</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="Hash.GetBytes">func (*Hash) <a href="/src/pkg/emp/objects/obj.go?s=543:575#L21">GetBytes</a></h3>
+				<pre>func (h *<a href="#Hash">Hash</a>) GetBytes() []<a href="/pkg/builtin/#byte">byte</a></pre>
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Message">type <a href="/src/pkg/emp/objects/message.go?s=405:711#L12">Message</a></h2>
+			<pre>type Message struct {
+    AddrHash  <a href="#Hash">Hash</a>                        <span class="comment">// Hash of Recipient&#39;s Address</span>
+    TxidHash  <a href="#Hash">Hash</a>                        <span class="comment">// Hash of random identifier</span>
+    Timestamp <a href="/pkg/time/">time</a>.<a href="/pkg/time/#Time">Time</a>                   <span class="comment">// Time that message was first broadcast</span>
+    Content   <a href="/pkg/emp/encryption/">encryption</a>.<a href="/pkg/emp/encryption/#EncryptedMessage">EncryptedMessage</a> <span class="comment">// see package encryption</span>
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="Message.FromBytes">func (*Message) <a href="/src/pkg/emp/objects/message.go?s=1115:1161#L46">FromBytes</a></h3>
+				<pre>func (m *<a href="#Message">Message</a>) FromBytes(data []<a href="/pkg/builtin/#byte">byte</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="Message.GetBytes">func (*Message) <a href="/src/pkg/emp/objects/message.go?s=1572:1607#L63">GetBytes</a></h3>
+				<pre>func (m *<a href="#Message">Message</a>) GetBytes() []<a href="/pkg/builtin/#byte">byte</a></pre>
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="MetaMessage">type <a href="/src/pkg/emp/objects/localmsg.go?s=405:850#L12">MetaMessage</a></h2>
+			<pre>type MetaMessage struct {
+    TxidHash  <a href="#Hash">Hash</a>      `json:&#34;txid_hash&#34;` <span class="comment">// Hash of random identifier</span>
+    Timestamp <a href="/pkg/time/">time</a>.<a href="/pkg/time/#Time">Time</a> `json:&#34;sent&#34;`      <span class="comment">// Time message was sent</span>
+    Purged    <a href="/pkg/builtin/#bool">bool</a>      `json:&#34;read&#34;`      <span class="comment">// Whether purge token has been received</span>
+    Sender    <a href="/pkg/builtin/#string">string</a>    `json:&#34;sender&#34;`    <span class="comment">// String representation of sender&#39;s address, if available.</span>
+    Recipient <a href="/pkg/builtin/#string">string</a>    `json:&#34;recipient&#34;` <span class="comment">// String representation of recipient&#39;s address, if available.</span>
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="NilPayload">type <a href="/src/pkg/emp/objects/interface.go?s=511:531#L14">NilPayload</a></h2>
+			<pre>type NilPayload <a href="/pkg/builtin/#bool">bool</a></pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="NilPayload.FromBytes">func (*NilPayload) <a href="/src/pkg/emp/objects/interface.go?s=589:635#L20">FromBytes</a></h3>
+				<pre>func (n *<a href="#NilPayload">NilPayload</a>) FromBytes(b []<a href="/pkg/builtin/#byte">byte</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="NilPayload.GetBytes">func (*NilPayload) <a href="/src/pkg/emp/objects/interface.go?s=533:571#L16">GetBytes</a></h3>
+				<pre>func (n *<a href="#NilPayload">NilPayload</a>) GetBytes() []<a href="/pkg/builtin/#byte">byte</a></pre>
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Node">type <a href="/src/pkg/emp/objects/node.go?s=430:725#L17">Node</a></h2>
+			<pre>type Node struct {
+    IP       <a href="/pkg/net/">net</a>.<a href="/pkg/net/#IP">IP</a>    <span class="comment">// Public IPv6 or IPv4 Address</span>
+    Port     <a href="/pkg/builtin/#uint16">uint16</a>    <span class="comment">// Port on which TCP Server is running</span>
+    LastSeen <a href="/pkg/time/">time</a>.<a href="/pkg/time/#Time">Time</a> <span class="comment">// Time of last connection to Node.</span>
+    Attempts <a href="/pkg/builtin/#uint8">uint8</a>     <span class="comment">// Number of reconnection attempt. Currently, node is forgotten after 3 failed attempts.</span>
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="Node.FromString">func (*Node) <a href="/src/pkg/emp/objects/node.go?s=776:824#L28">FromString</a></h3>
+				<pre>func (n *<a href="#Node">Node</a>) FromString(hostPort <a href="/pkg/builtin/#string">string</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="Node.String">func (*Node) <a href="/src/pkg/emp/objects/node.go?s=1158:1188#L49">String</a></h3>
+				<pre>func (n *<a href="#Node">Node</a>) String() <a href="/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="NodeList">type <a href="/src/pkg/emp/objects/node.go?s=727:774#L24">NodeList</a></h2>
+			<pre>type NodeList struct {
+    Nodes map[<a href="/pkg/builtin/#string">string</a>]<a href="#Node">Node</a>
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="NodeList.FromBytes">func (*NodeList) <a href="/src/pkg/emp/objects/node.go?s=1732:1779#L77">FromBytes</a></h3>
+				<pre>func (n *<a href="#NodeList">NodeList</a>) FromBytes(data []<a href="/pkg/builtin/#byte">byte</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="NodeList.GetBytes">func (*NodeList) <a href="/src/pkg/emp/objects/node.go?s=1291:1327#L56">GetBytes</a></h3>
+				<pre>func (n *<a href="#NodeList">NodeList</a>) GetBytes() []<a href="/pkg/builtin/#byte">byte</a></pre>
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Obj">type <a href="/src/pkg/emp/objects/obj.go?s=921:957#L43">Obj</a></h2>
+			<pre>type Obj struct {
+    HashList []<a href="#Hash">Hash</a>
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="Obj.FromBytes">func (*Obj) <a href="/src/pkg/emp/objects/obj.go?s=1207:1249#L62">FromBytes</a></h3>
+				<pre>func (o *<a href="#Obj">Obj</a>) FromBytes(data []<a href="/pkg/builtin/#byte">byte</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="Obj.GetBytes">func (*Obj) <a href="/src/pkg/emp/objects/obj.go?s=959:990#L47">GetBytes</a></h3>
+				<pre>func (o *<a href="#Obj">Obj</a>) GetBytes() []<a href="/pkg/builtin/#byte">byte</a></pre>
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Purge">type <a href="/src/pkg/emp/objects/purge.go?s=372:438#L10">Purge</a></h2>
+			<pre>type Purge struct {
+    Txid [16]<a href="/pkg/builtin/#byte">byte</a> <span class="comment">// Random message identifier.</span>
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="Purge.FromBytes">func (*Purge) <a href="/src/pkg/emp/objects/purge.go?s=592:636#L26">FromBytes</a></h3>
+				<pre>func (p *<a href="#Purge">Purge</a>) FromBytes(data []<a href="/pkg/builtin/#byte">byte</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="Purge.GetBytes">func (*Purge) <a href="/src/pkg/emp/objects/purge.go?s=440:473#L14">GetBytes</a></h3>
+				<pre>func (p *<a href="#Purge">Purge</a>) GetBytes() []<a href="/pkg/builtin/#byte">byte</a></pre>
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Serializer">type <a href="/src/pkg/emp/objects/interface.go?s=436:509#L9">Serializer</a></h2>
+			<pre>type Serializer interface {
+    GetBytes() []<a href="/pkg/builtin/#byte">byte</a>
+    FromBytes([]<a href="/pkg/builtin/#byte">byte</a>) <a href="/pkg/builtin/#error">error</a>
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Version">type <a href="/src/pkg/emp/objects/version.go?s=472:919#L18">Version</a></h2>
+			<pre>type Version struct {
+    Version   <a href="/pkg/builtin/#uint16">uint16</a>    `json:&#34;version&#34;`    <span class="comment">// Protocol Version, currently 1</span>
+    Timestamp <a href="/pkg/time/">time</a>.<a href="/pkg/time/#Time">Time</a> `json:&#34;timestamp&#34;`  <span class="comment">// Current server timestamp, should be within 5 minutes to connect.</span>
+    IpAddress <a href="/pkg/net/">net</a>.<a href="/pkg/net/#IP">IP</a>    `json:&#34;ip_address&#34;` <span class="comment">// Public IPv6 or IPv4 Address</span>
+    Port      <a href="/pkg/builtin/#uint16">uint16</a>    `json:&#34;port&#34;`       <span class="comment">// Public-facing port with running TCP server</span>
+    UserAgent <a href="/pkg/builtin/#string">string</a>    `json:&#34;user_agent&#34;` <span class="comment">// Node-provided (spoofable) User agent.</span>
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="Version.FromBytes">func (*Version) <a href="/src/pkg/emp/objects/version.go?s=921:967#L26">FromBytes</a></h3>
+				<pre>func (v *<a href="#Version">Version</a>) FromBytes(data []<a href="/pkg/builtin/#byte">byte</a>) <a href="/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="Version.GetBytes">func (*Version) <a href="/src/pkg/emp/objects/version.go?s=1405:1440#L44">GetBytes</a></h3>
+				<pre>func (v *<a href="#Version">Version</a>) GetBytes() []<a href="/pkg/builtin/#byte">byte</a></pre>
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.2.<br>
+Except as <a href="http://code.google.com/policies.html#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="/LICENSE">BSD license</a>.<br>
+<a href="/doc/tos.html">Terms of Service</a> | 
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+
+<script type="text/javascript" src="/lib/godoc/jquery.js"></script>
+
+<script type="text/javascript" src="/lib/godoc/godocs.js"></script>
+
+</body>
+</html>
+
