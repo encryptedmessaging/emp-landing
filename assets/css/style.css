@@ -21,6 +21,7 @@
 		padding: 0px;
 	} 
 
+
 body { 
 	background: #ffffff; 
 	margin: 0; 
@@ -76,6 +77,10 @@ a:focus {
 	color: #fff;
 	text-shadow:none;
 	background:#2B2E31;
+}
+
+.audit-alert > p  {
+  color: white;
 }
 
 .centered {
